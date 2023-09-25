@@ -24,7 +24,7 @@ class Profile(models.Model):
             img.thumbnail(new_img)
             img.save(self.avatar.path)
 class Student(models.Model):
-    pass 
+    list_display = ('last_name', 'first_name', 'date_of_birth', 'date_of_death')
 class Staff(models.Model):
     pass
 class Admin(models.Model):
